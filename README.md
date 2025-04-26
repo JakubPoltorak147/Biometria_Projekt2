@@ -22,6 +22,7 @@ Ten projekt implementuje pełny łańcuch przetwarzania obrazu do rozpoznawania 
 - `detekcja_teczowki.ipynb` - główny notebook z kompletną logiką biznesową
 - `MMU-Iris-Database/` - zbiór danych z obrazami oczu (nie jest zawarty w repozytorium)
 - `renamed_photos/` - katalog tworzony podczas wykonywania skryptu, zawierający przetworzone obrazy
+- Pozostałe katalogi to efekty wywoływań poszczególnych komórek, niezbędne do sprawozdania.  
 
 ## Metodologia
 1. **Segmentacja źrenicy**:
@@ -72,8 +73,8 @@ System jest zoptymalizowany pod kątem minimalizacji fałszywych dopasowań kosz
    ```
 
 ## Autorzy
-- Jakub Półtorak
-- Michał Pytel
+- Jakub Półtorak @JakubPoltorak147
+- Michał Pytel @MichaelPytel
 
 ## Uwagi
 System pokazuje potencjał do dalszej optymalizacji parametrów - autorzy zauważają, że podczas eksperymentów uzyskali F1-score powyżej 0.70, który później spadł do 0.685 z powodu nieudanych modyfikacji parametrów.
