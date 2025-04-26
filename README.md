@@ -27,12 +27,12 @@ Ten projekt implementuje pełny łańcuch przetwarzania obrazu do rozpoznawania 
 ## Metodologia
 1. **Segmentacja źrenicy**:
    - Konwersja do skali szarości
-   - Wyrównanie kontrastu (CLAHE)
+   - Wyrównanie kontrastu (CLAHE) i gaussian blur
    - Filtrowanie, binaryzacja i operacje morfologiczne
    - Lokalizacja środka i promienia
 
 2. **Segmentacja tęczówki**:
-   - Binaryzacja adaptacyjna
+   - Gaussian blur i binaryzacja
    - Operacje morfologiczne
    - Wyznaczanie promienia tęczówki metodą histogramu radialnego oraz projekcji
 
@@ -66,15 +66,15 @@ System jest zoptymalizowany pod kątem minimalizacji fałszywych dopasowań kosz
    ```
    pip install numpy opencv-python matplotlib seaborn jupyter
    ```
-3. Pobierz zbiór danych MMU Iris Dataset i umieść go w katalogu `MMU-Iris-Database`
+3. Niezbędny będzie zbiór danych MMU-Iris-Database. Jeśli wystąpią jakieś problemy z klonowaniem, pobierz go z internetu i skopiuj zawartość do katalogu o tej nazwie.
 4. Uruchom notebook
    ```
    jupyter notebook detekcja_teczowki.ipynb
    ```
 
 ## Autorzy
-- Jakub Półtorak @JakubPoltorak147
-- Michał Pytel @MichaelPytel
+- Jakub Półtorak [@JakubPoltorak147](https://github.com/JakubPoltorak147)
+- Michał Pytel [@MichalPytel](https://github.com/MichalPytel)
 
 ## Uwagi
 System pokazuje potencjał do dalszej optymalizacji parametrów - autorzy zauważają, że podczas eksperymentów uzyskali F1-score powyżej 0.70, który później spadł do 0.685 z powodu nieudanych modyfikacji parametrów.
