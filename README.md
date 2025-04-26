@@ -22,7 +22,7 @@ Ten projekt implementuje pełny łańcuch przetwarzania obrazu do rozpoznawania 
 - `detekcja_teczowki.ipynb` - główny notebook z kompletną logiką biznesową
 - `MMU-Iris-Database/` - zbiór danych z obrazami oczu (nie jest zawarty w repozytorium)
 - `renamed_photos/` - katalog tworzony podczas wykonywania skryptu, zawierający przetworzone obrazy
-- Pozostałe katalogi to efekty wywoływań poszczególnych komórek, niezbędne do sprawozdania.  
+- Pozostałe katalogi to efekty wywoływań poszczególnych komórek skryptu, niezbędne do sprawozdania.  
 
 ## Metodologia
 1. **Segmentacja źrenicy**:
